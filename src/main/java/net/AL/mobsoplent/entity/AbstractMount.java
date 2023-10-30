@@ -64,22 +64,22 @@ public abstract class AbstractMount extends Animal implements ContainerListener,
         return 0.0D;
     });
     private static final float MAX_MOVEMENT_SPEED = (float)generateSpeed(() -> {
-        return 1.0D;
+        return 2.0D;
     });
     private static final float MIN_JUMP_STRENGTH = (float)generateJumpStrength(() -> {
         return 0.0D;
     });
     private static final float MAX_JUMP_STRENGTH = (float)generateJumpStrength(() -> {
-        return 1.0D;
+        return 4.0D;
     });
     private static final float MIN_HEALTH = generateMaxHealth((p_272505_) -> {
-        return 0;
+        return 20;
     });
     private static final float MAX_HEALTH = generateMaxHealth((p_272504_) -> {
-        return p_272504_ - 1;
+        return p_272504_ + 40;
     });
-    private static final float BACKWARDS_MOVE_SPEED_FACTOR = 0.25F;
-    private static final float SIDEWAYS_MOVE_SPEED_FACTOR = 0.5F;
+    private static final float BACKWARDS_MOVE_SPEED_FACTOR = 0.5F;
+    private static final float SIDEWAYS_MOVE_SPEED_FACTOR = 0.75F;
     private static final Predicate<LivingEntity> PARENT_HORSE_SELECTOR = (p_30636_) -> {
         return p_30636_ instanceof AbstractHorse && ((AbstractHorse)p_30636_).isBred();
     };
@@ -998,7 +998,7 @@ public abstract class AbstractMount extends Animal implements ContainerListener,
     }
 
     protected static float generateMaxHealth(IntUnaryOperator pOperator) {
-        return 15.0F + (float)pOperator.applyAsInt(8) + (float)pOperator.applyAsInt(9);
+        return 55.0F + (float)pOperator.applyAsInt(8) + (float)pOperator.applyAsInt(9);
     }
 
     protected static double generateJumpStrength(DoubleSupplier pSupplier) {

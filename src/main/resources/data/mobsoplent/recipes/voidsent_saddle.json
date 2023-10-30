@@ -8,14 +8,14 @@
   ],
   "key": {
     "#": {
-      "item": "mobsoplenty:hard_leather"
+      "item": "mobsoplent:hard_leather"
     },
     "F": {
-      "item": "mobsoplenty:voidsent_scale"
+      "item": "mobsoplent:voidsent_scale"
     }
   },
   "result": {
-    "item": "mobsoplenty:voidsent_saddle",
+    "item": "mobsoplent:voidsent_saddle",
     "count": 1
   }
 }
