@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "mobsoplenty:item/voidsent_scale"
+    "layer0": "mobsoplent:item/voidsent_scale"
   }
 }

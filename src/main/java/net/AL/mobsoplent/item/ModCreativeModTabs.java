@@ -12,9 +12,9 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModCreativeModTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MobsOPlent.MOD_ID);
 
-    public static final RegistryObject<CreativeModeTab> THEMODONE_TAB = CREATIVE_MODE_TABS.register("mobsoplenty_tab",
+    public static final RegistryObject<CreativeModeTab> THEMODONE_TAB = CREATIVE_MODE_TABS.register("mobsoplent_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.VOIDER_SPAWN_EGG.get()))
-                    .title(Component.translatable("creativetab.mobsoplenty_tab"))
+                    .title(Component.translatable("creativetab.mobsoplent_tab"))
                             .displayItems((pParameters, pOutput) -> {
                                 pOutput.accept(ModItems.VOIDER_SPAWN_EGG.get());
                                 pOutput.accept(ModItems.VOIDER_SCALE.get());

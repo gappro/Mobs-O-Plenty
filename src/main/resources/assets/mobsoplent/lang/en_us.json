@@ -1,8 +1,8 @@
 {
-  "item.mobsoplenty.voider_spawn_egg": "Voidsent",
-  "item.mobsoplenty.voidsent_saddle": "Voidsent Saddle",
-  "item.mobsoplenty.voidsent_scale": "Voidsent Scale",
-  "item.mobsoplenty.hard_leather": "Hard Leather",
-  "creativetab.mobsoplenty_tab": "MobsOPlenty Tab",
-  "entity.mobsoplenty.voidsent": "Voidsent"
+  "item.mobsoplent.voider_spawn_egg": "Voidsent",
+  "item.mobsoplent.voidsent_saddle": "Voidsent Saddle",
+  "item.mobsoplent.voidsent_scale": "Voidsent Scale",
+  "item.mobsoplent.hard_leather": "Hard Leather",
+  "creativetab.mobsoplent_tab": "MobsOPlenty Tab",
+  "entity.mobsoplent.voidsent": "Voidsent"
 }
