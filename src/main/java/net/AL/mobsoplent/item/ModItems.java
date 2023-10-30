@@ -2,7 +2,7 @@ package net.AL.mobsoplent.item;
 
 import net.AL.mobsoplent.MobsOPlent;
 import net.AL.mobsoplent.entity.ModEntities;
-import net.AL.mobsoplenty.item.custom.MountSaddleItem;
+import net.AL.mobsoplent.item.custom.MountSaddleItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SaddleItem;
 import net.minecraftforge.common.ForgeSpawnEggItem;
