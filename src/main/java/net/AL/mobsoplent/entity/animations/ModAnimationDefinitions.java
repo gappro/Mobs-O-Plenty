@@ -1,4 +1,4 @@
-package net.AL.mobsoplenty.entity.animations;
+package net.AL.mobsoplent.entity.animations;
 
 import net.minecraft.client.animation.AnimationChannel;
 import net.minecraft.client.animation.AnimationDefinition;

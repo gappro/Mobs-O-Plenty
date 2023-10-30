@@ -1,7 +1,7 @@
-package net.AL.mobsoplenty.item;
+package net.AL.mobsoplent.item;
 
-import net.AL.mobsoplenty.MobsOPlenty;
-import net.AL.mobsoplenty.entity.ModEntities;
+import net.AL.mobsoplent.MobsOPlent;
+import net.AL.mobsoplent.entity.ModEntities;
 import net.AL.mobsoplenty.item.custom.MountSaddleItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SaddleItem;
@@ -14,7 +14,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ModItems {
 
-    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MobsOPlenty.MOD_ID);
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MobsOPlent.MOD_ID);
 
 
     public static final RegistryObject<Item> VOIDER_SPAWN_EGG = ITEMS.register("voider_spawn_egg",

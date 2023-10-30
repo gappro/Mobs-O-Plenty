@@ -1,8 +1,8 @@
-package net.AL.mobsoplenty.event;
+package net.AL.mobsoplent.event;
 
 import java.util.EnumSet;
 
-import net.AL.mobsoplenty.entity.AbstractMount;
+import net.AL.mobsoplent.entity.AbstractMount;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.ai.goal.Goal;
 import net.minecraft.world.entity.ai.util.DefaultRandomPos;

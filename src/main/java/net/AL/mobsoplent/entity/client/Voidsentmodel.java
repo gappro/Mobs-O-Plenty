@@ -1,12 +1,12 @@
-package net.AL.mobsoplenty.entity.client;// Made with Blockbench 4.8.3
+package net.AL.mobsoplent.entity.client;// Made with Blockbench 4.8.3
 // Exported for Minecraft version 1.17 or later with Mojang mappings
 // Paste this class into your mod and generate all required imports
 
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import net.AL.mobsoplenty.entity.animations.ModAnimationDefinitions;
-import net.AL.mobsoplenty.entity.custom.VoidsentEntity;
+import net.AL.mobsoplent.entity.animations.ModAnimationDefinitions;
+import net.AL.mobsoplent.entity.custom.VoidsentEntity;
 import net.minecraft.client.model.HierarchicalModel;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.ModelPart;

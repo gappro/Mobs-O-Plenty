@@ -1,7 +1,7 @@
-package net.AL.mobsoplenty.entity;
+package net.AL.mobsoplent.entity;
 
-import net.AL.mobsoplenty.MobsOPlenty;
-import net.AL.mobsoplenty.entity.custom.VoidsentEntity;
+import net.AL.mobsoplent.MobsOPlent;
+import net.AL.mobsoplent.entity.custom.VoidsentEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -11,7 +11,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ModEntities {
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES =
-            DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, MobsOPlenty.MOD_ID);
+            DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, MobsOPlent.MOD_ID);
 
     public static final RegistryObject<EntityType<VoidsentEntity>> VOIDSENT =
             ENTITY_TYPES.register("voidsent", () -> EntityType.Builder.of(VoidsentEntity::new, MobCategory.CREATURE)

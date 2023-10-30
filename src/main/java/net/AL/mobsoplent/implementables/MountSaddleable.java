@@ -1,4 +1,4 @@
-package net.AL.mobsoplenty.implementables;
+package net.AL.mobsoplent.implementables;
 
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;

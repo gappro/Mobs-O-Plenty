@@ -1,6 +1,6 @@
-package net.AL.mobsoplenty.datagen;
-import net.AL.mobsoplenty.MobsOPlenty;
-import net.AL.mobsoplenty.item.ModItems;
+package net.AL.mobsoplent.datagen;
+import net.AL.mobsoplent.MobsOPlent;
+import net.AL.mobsoplent.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -12,7 +12,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 public class ModItemModelProvider extends ItemModelProvider {
     public ModItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
-        super(output, MobsOPlenty.MOD_ID, existingFileHelper);
+        super(output, MobsOPlent.MOD_ID, existingFileHelper);
     }
 
     @Override
@@ -22,12 +22,12 @@ public class ModItemModelProvider extends ItemModelProvider {
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
-                new ResourceLocation(MobsOPlenty.MOD_ID,"item/" + item.getId().getPath()));
+                new ResourceLocation(MobsOPlent.MOD_ID,"item/" + item.getId().getPath()));
     }
 
     private ItemModelBuilder eggItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
-                new ResourceLocation(MobsOPlenty.MOD_ID,"item/" + "voider_egg"));
+                new ResourceLocation(MobsOPlent.MOD_ID,"item/" + "voider_egg"));
     }
 }

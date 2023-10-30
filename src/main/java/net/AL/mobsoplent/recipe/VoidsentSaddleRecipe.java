@@ -1,8 +1,8 @@
-package net.AL.mobsoplenty.recipe;
+package net.AL.mobsoplent.recipe;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
-import net.AL.mobsoplenty.MobsOPlenty;
+import net.AL.mobsoplent.MobsOPlent;
 import net.minecraft.core.NonNullList;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.network.FriendlyByteBuf;
@@ -80,7 +80,7 @@ public class VoidsentSaddleRecipe implements Recipe<SimpleContainer> {
 
     public static class Serializer implements RecipeSerializer<VoidsentSaddleRecipe>{
         public static final  Serializer INSTANCE = new Serializer();
-        public static final  ResourceLocation ID = new ResourceLocation(MobsOPlenty.MOD_ID, "voidsent_saddle");
+        public static final  ResourceLocation ID = new ResourceLocation(MobsOPlent.MOD_ID, "voidsent_saddle");
 
 
         @Override

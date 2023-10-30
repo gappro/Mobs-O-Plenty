@@ -1,8 +1,8 @@
-package net.AL.mobsoplenty.entity.client;
+package net.AL.mobsoplent.entity.client;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import net.AL.mobsoplenty.MobsOPlenty;
-import net.AL.mobsoplenty.entity.custom.VoidsentEntity;
+import net.AL.mobsoplent.MobsOPlent;
+import net.AL.mobsoplent.entity.custom.VoidsentEntity;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.MobRenderer;
@@ -15,7 +15,7 @@ public class VoidsentRenderer extends MobRenderer<VoidsentEntity, Voidsentmodel<
 
     @Override
     public ResourceLocation getTextureLocation(VoidsentEntity pEntity){
-        return new ResourceLocation(MobsOPlenty.MOD_ID, "textures/entity/voider.png");
+        return new ResourceLocation(MobsOPlent.MOD_ID, "textures/entity/voider.png");
     }
 
     @Override

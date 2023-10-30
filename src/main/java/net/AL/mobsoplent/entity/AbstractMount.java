@@ -1,9 +1,9 @@
-package net.AL.mobsoplenty.entity;
+package net.AL.mobsoplent.entity;
 
-import net.AL.mobsoplenty.entity.custom.VoidsentEntity;
-import net.AL.mobsoplenty.event.RunAroundLikeCrazyGoalMount;
-import net.AL.mobsoplenty.implementables.MountSaddleable;
-import net.AL.mobsoplenty.item.ModItems;
+import net.AL.mobsoplent.entity.custom.VoidsentEntity;
+import net.AL.mobsoplent.event.RunAroundLikeCrazyGoalMount;
+import net.AL.mobsoplent.implementables.MountSaddleable;
+import net.AL.mobsoplent.item.ModItems;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -53,7 +53,7 @@ import java.util.function.DoubleSupplier;
 import java.util.function.IntUnaryOperator;
 import java.util.function.Predicate;
 
-import static net.AL.mobsoplenty.item.ModItems.ITEMS;
+import static net.AL.mobsoplent.item.ModItems.ITEMS;
 
 public abstract class AbstractMount extends Animal implements ContainerListener, HasCustomInventoryScreen, OwnableEntity, PlayerRideableJumping, MountSaddleable {
     public static final int EQUIPMENT_SLOT_OFFSET = 400;

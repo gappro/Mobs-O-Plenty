@@ -1,7 +1,7 @@
-package net.AL.mobsoplenty.entity.custom;
+package net.AL.mobsoplent.entity.custom;
 
-import net.AL.mobsoplenty.entity.AbstractMount;
-import net.AL.mobsoplenty.event.RunAroundLikeCrazyGoalMount;
+import net.AL.mobsoplent.entity.AbstractMount;
+import net.AL.mobsoplent.event.RunAroundLikeCrazyGoalMount;
 import net.minecraft.Util;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;

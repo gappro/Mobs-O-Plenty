@@ -1,11 +1,11 @@
-package net.AL.mobsoplenty;
+package net.AL.mobsoplent;
 
 //import com.mojang.logging.LogUtils;
-import net.AL.mobsoplenty.entity.ModEntities;
-import net.AL.mobsoplenty.entity.client.VoidsentRenderer;
-import net.AL.mobsoplenty.item.ModCreativeModTabs;
-import net.AL.mobsoplenty.item.ModItems;
-import net.AL.mobsoplenty.recipe.ModRecipes;
+import net.AL.mobsoplent.entity.ModEntities;
+import net.AL.mobsoplent.entity.client.VoidsentRenderer;
+import net.AL.mobsoplent.item.ModCreativeModTabs;
+import net.AL.mobsoplent.item.ModItems;
+import net.AL.mobsoplent.recipe.ModRecipes;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -22,15 +22,15 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 //import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(MobsOPlenty.MOD_ID)
-public class MobsOPlenty
+@Mod(MobsOPlent.MOD_ID)
+public class MobsOPlent
 {
     // Define mod id in a common place for everything to reference
-    public static final String MOD_ID = "mobsoplenty";
+    public static final String MOD_ID = "mobsoplent";
     // Directly reference a slj logger
 
     //private static final Logger LOGGER = LogUtils.getLogger();
-    public MobsOPlenty()
+    public MobsOPlent()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
