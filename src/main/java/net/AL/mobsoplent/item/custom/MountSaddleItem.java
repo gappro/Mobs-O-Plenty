@@ -1,6 +1,6 @@
-package net.AL.mobsoplenty.item.custom;
+package net.AL.mobsoplent.item.custom;
 
-import net.AL.mobsoplenty.implementables.MountSaddleable;
+import net.AL.mobsoplent.implementables.MountSaddleable;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
