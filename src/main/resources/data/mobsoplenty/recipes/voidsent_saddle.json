@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "leather",
+  "pattern": [
+    "###",
+    "###",
+    "#F#"
+  ],
+  "key": {
+    "#": {
+      "item": "mobsoplenty:hard_leather"
+    },
+    "F": {
+      "item": "mobsoplenty:voidsent_scale"
+    }
+  },
+  "result": {
+    "item": "mobsoplenty:voidsent_saddle",
+    "count": 1
+  }
+}
