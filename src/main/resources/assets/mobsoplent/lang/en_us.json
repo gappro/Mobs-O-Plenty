@@ -1,8 +1,11 @@
 {
   "item.mobsoplent.voider_spawn_egg": "Voidsent",
+  "item.mobsoplent.ostrich_spawn_egg": "Ostrich",
   "item.mobsoplent.voidsent_saddle": "Voidsent Saddle",
+  "item.mobsoplent.ostrich_saddle": "Ostrich Saddle",
   "item.mobsoplent.voidsent_scale": "Voidsent Scale",
   "item.mobsoplent.hard_leather": "Hard Leather",
   "creativetab.mobsoplent_tab": "MobsOPlenty Tab",
-  "entity.mobsoplent.voidsent": "Voidsent"
+  "entity.mobsoplent.voidsent": "Voidsent",
+  "entity.mobsoplent.ostrich": "Ostrich"
 }

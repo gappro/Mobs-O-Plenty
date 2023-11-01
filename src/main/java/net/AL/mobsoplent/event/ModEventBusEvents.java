@@ -2,6 +2,7 @@ package net.AL.mobsoplent.event;
 
 import net.AL.mobsoplent.MobsOPlent;
 import net.AL.mobsoplent.entity.ModEntities;
+import net.AL.mobsoplent.entity.custom.OstrichEntity;
 import net.AL.mobsoplent.entity.custom.VoidsentEntity;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -13,5 +14,7 @@ public class ModEventBusEvents {
     @SubscribeEvent
     public static  void  registerAttributes(EntityAttributeCreationEvent event){
         event.put(ModEntities.VOIDSENT.get(), VoidsentEntity.createAttributes().build());
+        event.put(ModEntities.OSTRICH.get(), OstrichEntity.createAttributes().build());
     }
 }
+

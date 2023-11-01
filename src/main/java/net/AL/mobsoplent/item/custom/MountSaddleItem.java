@@ -1,6 +1,9 @@
 package net.AL.mobsoplent.item.custom;
 
+import net.AL.mobsoplent.entity.custom.OstrichEntity;
+import net.AL.mobsoplent.entity.custom.VoidsentEntity;
 import net.AL.mobsoplent.implementables.MountSaddleable;
+import net.AL.mobsoplent.item.ModItems;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -23,7 +26,13 @@ public class MountSaddleItem extends Item{
         if (pTarget instanceof MountSaddleable saddleable && pTarget.isAlive()) {
             if (!saddleable.isSaddled() && saddleable.isSaddleable()) {
                 if (!pPlayer.level().isClientSide) {
-                    saddleable.equipSaddle(SoundSource.NEUTRAL);
+                    if(pTarget instanceof VoidsentEntity && pStack.is(ModItems.VOIDER_SADDLE.get()))
+                        saddleable.equipSaddle(SoundSource.NEUTRAL);
+
+                    if(pTarget instanceof OstrichEntity && pStack.is(ModItems.OSTRICH_SADDLE.get()))
+                        saddleable.equipSaddle(SoundSource.NEUTRAL);
+
+
                     pTarget.level().gameEvent(pTarget, GameEvent.EQUIP, pTarget.position());
                     pStack.shrink(1);
                 }

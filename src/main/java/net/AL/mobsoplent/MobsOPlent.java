@@ -2,7 +2,9 @@ package net.AL.mobsoplent;
 
 //import com.mojang.logging.LogUtils;
 import net.AL.mobsoplent.entity.ModEntities;
+import net.AL.mobsoplent.entity.client.OstrichRenderer;
 import net.AL.mobsoplent.entity.client.VoidsentRenderer;
+import net.AL.mobsoplent.entity.custom.OstrichEntity;
 import net.AL.mobsoplent.item.ModCreativeModTabs;
 import net.AL.mobsoplent.item.ModItems;
 import net.AL.mobsoplent.recipe.ModRecipes;
@@ -76,6 +78,7 @@ public class MobsOPlent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
             EntityRenderers.register(ModEntities.VOIDSENT.get(), VoidsentRenderer::new);
+            EntityRenderers.register(ModEntities.OSTRICH.get(), OstrichRenderer::new);
         }
     }
 }

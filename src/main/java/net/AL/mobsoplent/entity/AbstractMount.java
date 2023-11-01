@@ -53,8 +53,6 @@ import java.util.function.DoubleSupplier;
 import java.util.function.IntUnaryOperator;
 import java.util.function.Predicate;
 
-import static net.AL.mobsoplent.item.ModItems.ITEMS;
-
 public abstract class AbstractMount extends Animal implements ContainerListener, HasCustomInventoryScreen, OwnableEntity, PlayerRideableJumping, MountSaddleable {
     public static final int EQUIPMENT_SLOT_OFFSET = 400;
     public static final int CHEST_SLOT_OFFSET = 499;
@@ -118,9 +116,9 @@ public abstract class AbstractMount extends Animal implements ContainerListener,
     @Nullable
     private UUID owner;
 
-    protected AbstractMount(EntityType<? extends VoidsentEntity> pEntityType, Level pLevel) {
+    protected AbstractMount(EntityType<? extends AbstractMount> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
-        this.setMaxUpStep(1.0F);
+        this.setMaxUpStep(3.0F);
         this.createInventory();
     }
 
@@ -680,10 +678,7 @@ public abstract class AbstractMount extends Animal implements ContainerListener,
 
                 this.doPlayerRide(pPlayer);
                 //return InteractionResult.sidedSuccess(this.level().isClientSide);
-                System.out.println(ModItems.VOIDER_SADDLE.get());
-                System.out.println(Items.SADDLE);
-                System.out.println(itemstack.is(ModItems.VOIDER_SADDLE.get()));
-                return itemstack.is(ModItems.VOIDER_SADDLE.get()) ? itemstack.interactLivingEntity(pPlayer, this, pHand) : InteractionResult.PASS;
+                return (itemstack.is(ModItems.VOIDER_SADDLE.get())  || itemstack.is(ModItems.OSTRICH_SADDLE.get())) ? itemstack.interactLivingEntity(pPlayer, this, pHand) : InteractionResult.PASS;
             }
         } else {
             return super.mobInteract(pPlayer, pHand);

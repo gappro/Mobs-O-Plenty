@@ -17,9 +17,11 @@ public class ModCreativeModTabs {
                     .title(Component.translatable("creativetab.mobsoplent_tab"))
                             .displayItems((pParameters, pOutput) -> {
                                 pOutput.accept(ModItems.VOIDER_SPAWN_EGG.get());
+                                pOutput.accept(ModItems.OSTRICH_SPAWN_EGG.get());
                                 pOutput.accept(ModItems.VOIDER_SCALE.get());
                                 pOutput.accept(ModItems.HARD_LEATHER.get());
                                 pOutput.accept(ModItems.VOIDER_SADDLE.get());
+                                pOutput.accept(ModItems.OSTRICH_SADDLE.get());
                             }).build());
 
     public static void register(IEventBus eventBus) {

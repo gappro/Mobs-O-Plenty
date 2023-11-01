@@ -20,6 +20,9 @@ public class ModItems {
     public static final RegistryObject<Item> VOIDER_SPAWN_EGG = ITEMS.register("voider_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntities.VOIDSENT, 0x6200a3, 0x000000, new Item.Properties().stacksTo(16)));
 
+    public static final RegistryObject<Item> OSTRICH_SPAWN_EGG = ITEMS.register("ostrich_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.OSTRICH, 0xc9c8a7, 0x837c70, new Item.Properties().stacksTo(16)));
+
     public static final RegistryObject<Item> VOIDER_SCALE = ITEMS.register("voidsent_scale",
             () -> new Item(
                     new Item.Properties().stacksTo(64)
@@ -33,6 +36,10 @@ public class ModItems {
     public static final RegistryObject<Item> VOIDER_SADDLE = ITEMS.register("voidsent_saddle",
             () -> new MountSaddleItem(
                     new Item.Properties().stacksTo(2)
+            ));
+    public static final RegistryObject<Item> OSTRICH_SADDLE = ITEMS.register("ostrich_saddle",
+            () -> new MountSaddleItem(
+                    new Item.Properties().stacksTo(4)
             ));
 
 

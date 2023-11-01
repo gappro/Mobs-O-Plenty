@@ -7,5 +7,6 @@ import net.minecraft.resources.ResourceLocation;
 public class ModModelLayers {
     public static final ModelLayerLocation VOIDSENT_LAYER = new ModelLayerLocation(
             new ResourceLocation(MobsOPlent.MOD_ID, "voider_layer"), "main");
-
+    public static final ModelLayerLocation OSTRICH_LAYER = new ModelLayerLocation(
+            new ResourceLocation(MobsOPlent.MOD_ID, "ostritch_layer"), "main");
 }

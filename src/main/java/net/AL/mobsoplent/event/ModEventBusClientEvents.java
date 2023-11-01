@@ -2,6 +2,7 @@ package net.AL.mobsoplent.event;
 
 import net.AL.mobsoplent.MobsOPlent;
 import net.AL.mobsoplent.entity.client.ModModelLayers;
+import net.AL.mobsoplent.entity.client.Ostrichmodel;
 import net.AL.mobsoplent.entity.client.Voidsentmodel;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -13,5 +14,6 @@ public class ModEventBusClientEvents {
     @SubscribeEvent
     public static void registerLayer(EntityRenderersEvent.RegisterLayerDefinitions event) {
         event.registerLayerDefinition(ModModelLayers.VOIDSENT_LAYER, Voidsentmodel::createBodyLayer);
+        event.registerLayerDefinition(ModModelLayers.OSTRICH_LAYER, Ostrichmodel::createBodyLayer);
     }
 }
