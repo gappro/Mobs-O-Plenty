@@ -52,7 +52,7 @@ public class OstrichEntity extends AbstractMount implements VariantHolder<Varian
         this.goalSelector.addGoal(8, new RandomLookAroundGoal(this));
         this.goalSelector.addGoal(9, new RunAroundLikeCrazyGoalMount(this,0.8D));
     }
-/*
+
     public final AnimationState idleAnimationState = new AnimationState();
     private int  idleAnimationTimeout = 0;
 
@@ -84,7 +84,7 @@ public class OstrichEntity extends AbstractMount implements VariantHolder<Varian
         }
 
         this.walkAnimation.update(f, 0.2f);
-    }*/
+    }
 
     public static AttributeSupplier.Builder createAttributes() {
         return AbstractHorse.createBaseHorseAttributes();
